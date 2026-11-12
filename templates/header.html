@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Prem Kumar | Portfolio</title>
+  <meta name="description"
+    content="Namaste, Welcome to my Portfolio - Prem Kumar">
+  <!--
+  Lantern River Template
+  https://templatemo.com/tm-634-lantern-river
+-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="{% static 'templatemo-634-style.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio.css' %}">
+</head>
+
+<body>
+  <a class="sr" href="#bridge">Skip to content</a>
+
+  <div id="loader" role="status" aria-live="polite">
+    <div class="ld">
+      <div class="ld-lantern" aria-hidden="true"></div>
+      <p>WELCOME PROFESSIONALS | THRIVE INTO MY JOURNEY</p>
+      <div class="ld-bar"><i id="ldFill"></i></div>
+      <small>PREM KUMAR · PORTFOLIO</small>
+    </div>
+  </div>
+
+  <div class="scene-fallback" aria-hidden="true"></div>
+  <canvas id="scene" aria-label="A paper lotus lantern floating down a festival river at night in Hoi An"
+    tabindex="-1"></canvas>
+
+  <header class="bar" id="bar">
+    <a class="brand" href="#launch" aria-label="Namaste, Welcome to my Portfolio">
+      <svg viewBox="0 0 22 28" aria-hidden="true">
+        <line x1="11" y1="0" x2="11" y2="4" stroke="#FFE082" stroke-width="1" />
+        <rect x="6" y="4" width="10" height="2" rx="1" fill="#5C3B24" />
+        <ellipse cx="11" cy="14" rx="9" ry="8.5" fill="#FFB300" />
+        <ellipse cx="11" cy="14.5" rx="5" ry="6.5" fill="#FFE082" opacity=".75" />
+        <path d="M4 14 Q11 9 18 14 M4 16 Q11 21 18 16" stroke="#FF8F00" stroke-width=".7" fill="none" opacity=".7" />
+        <rect x="6" y="22" width="10" height="2" rx="1" fill="#5C3B24" />
+        <line x1="11" y1="24" x2="11" y2="28" stroke="#E2553F" stroke-width="1.4" />
+      </svg>
+      <div><b>Namaste</b><span>Welcome to my Portfolio</span></div>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <span class="nav-glow" aria-hidden="true"></span>
+      <a href="#launch" data-z="0">Home</a>
+      <a href="#bridge" data-z="1">About Me</a>
+      <a href="#market" data-z="2">My Projects</a>
+      <a href="#pier" data-z="3">Technical Skills</a>
+      <a href="#lanterns" data-z="4">My Journey</a>
+      <a href="#wish" data-z="5">Contact Me</a>
+    </nav>
+    <div class="tools">
+      <button class="tool trayBtn" id="trayBtn" type="button" aria-pressed="true" aria-controls="tray"
+        aria-label="Hide lantern choices (L)" title="Lantern choices (L)"><svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3.5v2.2" />
+          <rect x="8.6" y="5.7" width="6.8" height="1.6" rx=".6" />
+          <path d="M7.4 9.2c0-1.1.9-1.9 2-1.9h5.2c1.1 0 2 .8 2 1.9v6.1c0 1.1-.9 1.9-2 1.9H9.4c-1.1 0-2-.8-2-1.9z" />
+          <path d="M12 7.3v9.9M9.6 7.6c-1 2.8-1 6.6 0 9.3M14.4 7.6c1 2.8 1 6.6 0 9.3" class="rib" />
+          <rect x="8.6" y="17.2" width="6.8" height="1.6" rx=".6" />
+          <path d="M12 18.8v2.2" />
+        </svg></button>
+      <button class="tool snd pending" id="sndBtn" type="button" aria-label="Sound on, click once to wake it"
+        title="Sound">
+        <svg viewBox="0 0 22 16" aria-hidden="true">
+          <path d="M2 6h3l4-3.5v11L5 10H2z" fill="currentColor" stroke="none" />
+          <path class="wave" d="M12 5.2a3.6 3.6 0 0 1 0 5.6" />
+          <path class="wave" d="M14.6 2.8a7 7 0 0 1 0 10.4" />
+          <path class="slash" d="M3 1.5 19 14.5" stroke-width="1.6" />
+        </svg>
+      </button>
+      <button class="tool fs" id="fsBtn" type="button" aria-label="Full screen" title="Full screen">
+        <svg viewBox="0 0 18 18" aria-hidden="true">
+          <path d="M2 6.5V2h4.5M11.5 2H16v4.5M16 11.5V16h-4.5M6.5 16H2v-4.5" />
+        </svg>
+      </button>
+      <button class="tool" id="shotBtn" type="button" aria-label="Save a screenshot" title="Screenshot">
+        <svg viewBox="0 0 18 18" aria-hidden="true">
+          <path d="M2 5.5h3l1.5-2h5l1.5 2h3v9H2z" />
+          <circle cx="9" cy="10" r="2.8" />
+        </svg>
+      </button>
+      <button class="tool burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false"
+        aria-controls="drawer"><i></i></button>
+    </div>
+  </header>
+
+  <nav class="drawer" id="drawer" aria-label="Mobile">
+    <a href="#launch"><small>01</small>Home</a>
+    <a href="#bridge"><small>02</small>About Me</a>
+    <a href="#market"><small>03</small>My Projects</a>
+    <a href="#pier"><small>04</small>Technical Skills</a>
+    <a href="#lanterns"><small>05</small>My Journey</a>
+    <a href="#wish"><small>06</small>Contact Me</a>
+    <a class="btn warm" href="#wish">Contact Me</a>
+  </nav>

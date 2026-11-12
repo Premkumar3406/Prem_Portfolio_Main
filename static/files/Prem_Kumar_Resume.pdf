@@ -1,0 +1,96 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1200 >>
+stream
+BT
+/F1 22 Tf
+50 740 Td
+(PREM KUMAR) Tj
+/F2 11 Tf
+0 -22 Td
+(Software Developer | Python | AI / ML Enthusiast) Tj
+0 -16 Td
+(Email: premkumar@example.com | Hyderabad, India | LinkedIn | GitHub) Tj
+0 -26 Td
+/F1 14 Tf
+(PROFESSIONAL SUMMARY) Tj
+0 -16 Td
+/F2 10 Tf
+(Computer Science graduate passionate about building robust, data-driven applications.) Tj
+0 -14 Td
+(Strong foundation in Python, Django, OOP, Relational Databases, and Machine Learning.) Tj
+0 -26 Td
+/F1 14 Tf
+(TECHNICAL SKILLS) Tj
+0 -16 Td
+/F2 10 Tf
+(Languages: Python, Java, SQL, C++) Tj
+0 -14 Td
+(Web Technologies: Django, HTML5, CSS3, JavaScript, REST APIs) Tj
+0 -14 Td
+(AI / ML: Scikit-learn, TensorFlow, XGBoost, CNN, SHAP, LIME, Pandas, NumPy) Tj
+0 -14 Td
+(Tools: Git, GitHub, VS Code, Google Colab, SQLite, PostgreSQL) Tj
+0 -26 Td
+/F1 14 Tf
+(FEATURED PROJECTS) Tj
+0 -16 Td
+/F1 11 Tf
+(1. Explainable Credit Risk Prediction) Tj
+0 -14 Td
+/F2 10 Tf
+(Developed cost-sensitive XGBoost model to handle class imbalance in credit scoring.) Tj
+0 -14 Td
+(Utilized SHAP and LIME frameworks to deliver model interpretability and transparency.) Tj
+0 -18 Td
+/F1 11 Tf
+(2. Brain Tumor Detection) Tj
+0 -14 Td
+/F2 10 Tf
+(Applied transfer learning with VGG16 architecture for medical image classification.) Tj
+0 -14 Td
+(Achieved 93% accuracy on MRI benchmark dataset with deep neural networks.) Tj
+0 -26 Td
+/F1 14 Tf
+(EDUCATION & TRAINING) Tj
+0 -16 Td
+/F1 11 Tf
+(Bachelor of Technology in Computer Science & Engineering) Tj
+0 -16 Td
+/F1 11 Tf
+(Software Development Full Stack Training - KodNest) Tj
+0 -14 Td
+/F2 10 Tf
+(Intensive hands-on training in Python development, DSA, and problem solving.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000001500 00000 n 
+0000001577 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1649
+%%EOF

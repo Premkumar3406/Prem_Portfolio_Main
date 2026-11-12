@@ -1,0 +1,316 @@
+{% load static %}
+{% include "header.html" %}
+
+<aside class="route" id="route" aria-label="Portfolio sections">
+  <a class="rt" href="#launch" data-z="0"><span>Home</span><i></i></a>
+  <a class="rt" href="#bridge" data-z="1"><span>About Me</span><i></i></a>
+  <a class="rt" href="#market" data-z="2"><span>My Projects</span><i></i></a>
+  <a class="rt" href="#pier" data-z="3"><span>Technical Skills</span><i></i></a>
+  <a class="rt" href="#lanterns" data-z="4"><span>My Journey</span><i></i></a>
+  <a class="rt" href="#wish" data-z="5"><span>Contact Me</span><i></i></a>
+</aside>
+
+<main id="content">
+  <!-- 01 HOME -->
+  <section class="zone hero" id="launch" data-zone="0">
+    <div class="hero-copy portfolio-hero">
+      <p class="eyebrow">WELCOME PROFESSIONALS <span>|</span> THRIVE INTO MY JOURNEY</p>
+      <div class="hero-profile-wrap">
+        <div class="hero-profile" title="Prem Kumar">
+          <div class="hero-profile-inner">
+            <img src="{% static 'images/prem-profile.jpg' %}?v=2" alt="Prem Kumar">
+            <div class="shine-glare" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+      <h1>Hi, I'm <em>Prem Kumar.</em></h1>
+      <p class="lede">Computer Science graduate building practical software, machine learning solutions and thoughtful
+        digital experiences.</p>
+      <p class="hero-role">SOFTWARE DEVELOPER <span>·</span> PYTHON <span>·</span> AI / ML</p>
+      <div class="cta">
+        <a class="btn warm" href="#market">Explore my work
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M8 3v10M4 9l4 4 4-4" />
+          </svg>
+        </a>
+        <a class="btn ghost" href="/download-resume/" download="Prem_Kumar_Resume.pdf">Download resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 ABOUT -->
+  <section class="zone left" id="bridge" data-zone="1">
+    <div class="plate reveal">
+      <p class="tag">02 · About me</p>
+      <h2>Curious mind. <em>Practical builder.</em></h2>
+      <p>I'm Prem Kumar, a Computer Science and Engineering graduate interested in software development, Python,
+        artificial intelligence and machine learning.</p>
+      <p>I enjoy understanding how systems work, solving problems step by step and turning ideas into useful
+        applications. I am currently strengthening my software development skills through hands-on training and project
+        work.</p>
+      <div class="tags about-stats" aria-label="Professional focus">
+        <div class="stat"><b>01</b><small>Computer Science graduate</small></div>
+        <div class="stat"><b>AI</b><small>Machine learning interest</small></div>
+        <div class="stat"><b>DEV</b><small>Continuous learning</small></div>
+      </div>
+      <div class="about-links">
+        <!-- Replace the example URLs with your real profile links. -->
+        <a class="btn ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 PROJECTS -->
+  <section class="zone right" id="market" data-zone="2">
+    <div class="plate market-plate reveal">
+      <div class="mk-head">
+        <div>
+          <p class="tag">03 · Selected projects</p>
+          <h2>Ideas turned into <em>working concepts.</em></h2>
+          <p>Explore selected academic and personal software projects. Select a card to read its summary.</p>
+        </div>
+        <div class="rail-nav">
+          <button class="arrow" id="railPrev" type="button" aria-label="Previous project"><svg viewBox="0 0 16 16"
+              aria-hidden="true">
+              <path d="M10 3 5 8l5 5" />
+            </svg></button>
+          <span class="count" id="railCount" aria-live="polite"><b>01</b> / 06</span>
+          <button class="arrow" id="railNext" type="button" aria-label="Next project"><svg viewBox="0 0 16 16"
+              aria-hidden="true">
+              <path d="m6 3 5 5-5 5" />
+            </svg></button>
+        </div>
+      </div>
+
+      <div class="rail" id="rail" tabindex="0" aria-label="Projects, use arrow keys to move">
+        <svg class="string" aria-hidden="true" preserveAspectRatio="none">
+          <path id="railString" d="M0 2 Q 50 20 100 2" />
+        </svg>
+        <div class="scroller" id="scroller">
+          <div class="lane" id="lane">
+            <div class="card" role="button" tabindex="0" data-title="Explainable Credit Risk Prediction"
+              data-meta="Machine Learning · XGBoost · SHAP · LIME"
+              data-text="An academic machine learning project focused on credit-risk prediction and explainable decision support. The approach uses cost-sensitive XGBoost to address class imbalance and SHAP and LIME to help explain model predictions.">
+              <div class="ph"><img src="{% static 'images/project-credit-risk.jpg' %}"
+                  alt="Credit risk prediction project" loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="cap"><b>Credit Risk Prediction</b><small>ML · Explainable AI</small></div>
+            </div>
+
+            <div class="card" role="button" tabindex="0" data-title="Brain Tumor Detection"
+              data-meta="Deep Learning · CNN · VGG16"
+              data-text="A medical-image classification project exploring transfer learning with the VGG16 architecture to identify brain-tumour patterns in image data. The project work reported 93% accuracy.">
+              <div class="ph"><img src="{% static 'images/project-brain-tumor.jpg' %}"
+                  alt="Brain tumour detection project" loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="cap"><b>Brain Tumor Detection</b><small>Deep Learning · VGG16</small></div>
+            </div>
+
+            <div class="card" role="button" tabindex="0" data-title="InterviewIQ – AI Voice Interviewer"
+              data-meta="AI · NLP · Python · Full-stack concept"
+              data-text="A proposed AI-powered interview platform concept designed to conduct voice-based interviews, capture spoken responses and support hiring workflows. Planned components include speech recognition, text-to-speech, an AI agent, a backend API and a web interface.">
+              <div class="ph"><img src="{% static 'images/project-interviewiq.jpg' %}"
+                  alt="InterviewIQ AI interviewer concept" loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="cap"><b>InterviewIQ</b><small>AI Voice Interviewer</small></div>
+            </div>
+
+            <div class="card" role="button" tabindex="0" data-title="Machine Learning Search Engine"
+              data-meta="Python · Information Retrieval · ML"
+              data-text="A search-engine project idea exploring how machine learning techniques can improve document retrieval and the relevance of search results. Add your implementation details, dataset and evaluation results here.">
+              <div class="ph"><img src="{% static 'images/project-search-engine.jpg' %}"
+                  alt="Machine learning search engine" loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="cap"><b>ML Search Engine</b><small>Python · Search</small></div>
+            </div>
+
+            <div class="card" role="button" tabindex="0" data-title="Django Personal Portfolio"
+              data-meta="Django · Python · HTML · CSS · JavaScript"
+              data-text="This portfolio website is being customized with Django templates, static assets and a cinematic animated interface to present professional information, skills and projects.">
+              <div class="ph"><img src="{% static 'images/project-portfolio.jpg' %}" alt="Django portfolio website"
+                  loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="cap"><b>Django Portfolio</b><small>Web Development</small></div>
+            </div>
+
+            <div class="card" role="button" tabindex="0" data-title="Python Coding Practice"
+              data-meta="Python · DSA · Problem Solving"
+              data-text="A collection of Python learning and problem-solving exercises covering programming fundamentals, functions, arrays, searching, sorting and algorithmic complexity. Add links to your repositories when ready.">
+              <div class="ph"><img src="{% static 'images/project-python.jpg' %}" alt="Python programming practice"
+                  loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="cap"><b>Python Practice</b><small>DSA · Problem Solving</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rail-foot">
+        <div class="lights" id="railLights" aria-label="Choose a project"></div>
+        <p class="rail-hint">Select a card to explore the project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 TECHNICAL SKILLS -->
+  <section class="zone left" id="pier" data-zone="3">
+    <div class="plate pier-plate reveal">
+      <p class="tag">04 · Technical skills</p>
+      <h2>Tools I use to <em>build and learn.</em></h2>
+      <p>Open a panel to explore the technologies and concepts in my learning toolkit.</p>
+      <div class="ribs" id="ribs">
+        <div class="rib open" role="button" tabindex="0" aria-expanded="true">
+          <span class="glowline"></span><span class="num">01</span><span class="vt">Languages</span>
+          <div class="body">
+            <h3>Programming languages</h3>
+            <p>Python and Java fundamentals, object-oriented programming and problem solving.</p>
+            <div class="chips"><span>Python</span><span>Java</span><span>DSA</span></div>
+          </div>
+        </div>
+        <div class="rib" role="button" tabindex="0" aria-expanded="false">
+          <span class="glowline"></span><span class="num">02</span><span class="vt">Web</span>
+          <div class="body">
+            <h3>Web development</h3>
+            <p>Building web pages and learning server-side application development.</p>
+            <div class="chips"><span>Django</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </div>
+        <div class="rib" role="button" tabindex="0" aria-expanded="false">
+          <span class="glowline"></span><span class="num">03</span><span class="vt">Database</span>
+          <div class="body">
+            <h3>Databases</h3>
+            <p>Working with relational database concepts and querying structured data.</p>
+            <div class="chips"><span>SQL</span><span>DBMS</span><span>SQLite</span></div>
+          </div>
+        </div>
+        <div class="rib" role="button" tabindex="0" aria-expanded="false">
+          <span class="glowline"></span><span class="num">04</span><span class="vt">AI / ML</span>
+          <div class="body">
+            <h3>AI and machine learning</h3>
+            <p>Model development, evaluation, deep learning and explainability concepts.</p>
+            <div class="chips">
+              <span>Scikit-learn</span><span>XGBoost</span><span>TensorFlow</span><span>SHAP</span><span>LIME</span>
+            </div>
+          </div>
+        </div>
+        <div class="rib" role="button" tabindex="0" aria-expanded="false">
+          <span class="glowline"></span><span class="num">05</span><span class="vt">Tools</span>
+          <div class="body">
+            <h3>Developer tools</h3>
+            <p>Tools used for coding, debugging, version control and project development.</p>
+            <div class="chips"><span>VS Code</span><span>Git</span><span>GitHub</span><span>Google Colab</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 EDUCATION, TRAINING, CERTIFICATIONS, ACHIEVEMENTS -->
+  <section class="zone right" id="lanterns" data-zone="4">
+    <div class="plate price-plate reveal journey-plate">
+      <p class="tag">05 · My journey</p>
+      <h2>Learning, building, <em>moving forward.</em></h2>
+      <p>Select a card to view education, training and professional development details.</p>
+
+      <div class="tiers" id="tiers" role="radiogroup" aria-label="Professional journey">
+        <div class="tier" role="radio" tabindex="0" aria-checked="false" data-i="0" data-price="B.Tech CSE"
+          data-weeks="Graduated"
+          data-items="Bachelor of Technology|Computer Science and Engineering and Business Systems|RGM Nandyal|2026"
+          data-color="#FFE082" style="--c:#FFE082">
+          <span class="cord" style="height:30px"></span><span class="lamp"
+            style="width:78px;height:92px"><b>Education</b></span><span class="tassel"></span>
+        </div>
+        <div class="tier on" role="radio" tabindex="0" aria-checked="true" data-i="1" data-price="KodNest"
+          data-weeks="Software development training"
+          data-items="Hands-on fresher training|Programming and problem solving|Software development practice|Bengaluru, Karnataka"
+          data-color="#FFB300" style="--c:#FFB300">
+          <span class="cord" style="height:52px"></span><span class="lamp"
+            style="width:96px;height:112px"><b>Training</b></span><span class="tassel"></span>
+        </div>
+        <div class="tier" role="radio" tabindex="0" aria-checked="false" data-i="2" data-price="Certifications"
+          data-weeks="Add verified credentials"
+          data-items="AWS Certified Cloud Practioner|AWS|April 4,2025|https://aws.amazon.com/verification"
+          data-color="#E2553F" style="--c:#E2553F">
+          <span class="cord" style="height:18px"></span><span class="lamp"
+            style="width:86px;height:102px"><b>Credentials</b></span><span class="tassel"></span>
+        </div>
+      </div>
+
+      <div class="tier-detail" id="tierDetail" aria-live="polite">
+        <span class="pr"><span id="tierPrice">KodNest</span><small>Training</small></span>
+        <span class="wk" id="tierWeeks">Software development training</span>
+        <ul id="tierItems">
+          <li>Hands-on fresher training</li>
+          <li>Programming and problem solving</li>
+          <li>Software development practice</li>
+          <li>Bengaluru, Karnataka</li>
+        </ul>
+        <a class="btn ghost" href="#wish">Connect with me</a>
+      </div>
+
+      <div class="journey-extra">
+        <h3>Achievements &amp; highlights</h3>
+        <ul>
+          <li>Developed an explainable machine-learning approach for credit-risk prediction.</li>
+          <li>Explored transfer learning for a brain-tumour image classification project.</li>
+          <li>Continuously practising Python, DSA and software development.</li>
+        </ul>
+        <a class="btn warm resume-btn" href="/download-resume/" download="Prem_Kumar_Resume.pdf">
+          Download my resume
+        </a>
+        <small class="resume-note">Always serves the latest verified resume PDF.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 CONTACT -->
+  <section class="zone left" id="wish" data-zone="5">
+    <div class="plate wish-plate reveal">
+      <p class="tag">06 · Contact me</p>
+      <h2>Let's build <em>something useful.</em></h2>
+      <p>Interested in software development, Python, AI/ML or collaboration? Reach out through the links below.</p>
+
+      <div class="contact-links">
+        <!-- Replace the email and profile URLs with your real details. -->
+        <a class="contact-link" href="mailto:YOUR_EMAIL@example.com"><span>Email</span><b>YOUR_EMAIL@example.com</b></a>
+        <a class="contact-link" href="https://www.linkedin.com/" target="_blank"
+          rel="noopener"><span>LinkedIn</span><b>Visit my profile ↗</b></a>
+        <a class="contact-link" href="https://github.com/" target="_blank" rel="noopener"><span>GitHub</span><b>Explore
+            my repositories ↗</b></a>
+      </div>
+
+      <form id="wishForm" action="/contact/" method="POST" novalidate>
+        {% csrf_token %}
+        <div id="formFeedback" class="form-feedback" style="display:none;" role="alert"></div>
+        <div class="row2">
+          <div class="field"><label for="fName">Your name</label><input id="fName" name="name" autocomplete="name"
+              placeholder="Enter your name" required></div>
+          <div class="field"><label for="fMail">Email address</label><input id="fMail" name="email" type="email"
+              autocomplete="email" placeholder="you@example.com" required></div>
+        </div>
+        <div class="field">
+          <label for="fType">I'm interested in</label>
+          <select id="fType" name="type">
+            <option>Software Development</option>
+            <option>Python / Django</option>
+            <option>AI / Machine Learning</option>
+            <option>Project Collaboration</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field"><label for="fMsg">Message</label><textarea id="fMsg" name="message"
+            placeholder="Write a message (at least 6 characters)" required></textarea></div>
+        <div class="form-foot">
+          <p class="addr"><b>Prem Kumar</b><br>Open to learning and opportunities</p>
+          <button class="btn warm" type="submit">Send message
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M2 8h11M8 3l5 5-5 5" />
+            </svg>
+          </button>
+        </div>
+      </form>
+      <p class="form-disclaimer">Messages are securely delivered and saved directly to the database. You'll receive a
+        response within 24-48 hours.</p>
+    </div>
+  </section>
+</main>
+
+{% include "footer.html" %}
+</body>
+
+</html>
