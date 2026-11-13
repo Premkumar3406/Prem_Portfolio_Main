@@ -89,10 +89,19 @@
         </svg>
         <div class="scroller" id="scroller">
           <div class="lane" id="lane">
+
+            <div class="card" role="button" tabindex="0" data-title="Django Personal Portfolio"
+              data-meta="Django · Python · HTML · CSS · JavaScript"
+              data-text="This portfolio website is being customized with Django templates, static assets and a cinematic animated interface to present professional information, skills and projects.">
+              <div class="ph"><img src="{% static 'images/prem-profile.jpg' %}" alt="Django portfolio website"
+                  loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="cap"><b>Django Portfolio</b><small>Web Development</small></div>
+            </div>
+
             <div class="card" role="button" tabindex="0" data-title="Explainable Credit Risk Prediction"
               data-meta="Machine Learning · XGBoost · SHAP · LIME"
               data-text="An academic machine learning project focused on credit-risk prediction and explainable decision support. The approach uses cost-sensitive XGBoost to address class imbalance and SHAP and LIME to help explain model predictions.">
-              <div class="ph"><img src="{% static 'images/prem-profile-square.jpg' %}"
+              <div class="ph"><img src="{% static 'images/credit_risk_prediction.jpg' %}"
                   alt="Credit risk prediction project" loading="lazy" onerror="this.style.display='none'"></div>
               <div class="cap"><b>Credit Risk Prediction</b><small>ML · Explainable AI</small></div>
             </div>
@@ -100,34 +109,28 @@
             <div class="card" role="button" tabindex="0" data-title="Brain Tumor Detection"
               data-meta="Deep Learning · CNN · VGG16"
               data-text="A medical-image classification project exploring transfer learning with the VGG16 architecture to identify brain-tumour patterns in image data. The project work reported 93% accuracy.">
-              <div class="ph"><img src="{% static 'images/project-brain-tumor.jpg' %}"
-                  alt="Brain tumour detection project" loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="ph"><img src="{% static 'images/brain_tumor.jpg' %}" alt="Brain tumour detection project"
+                  loading="lazy" onerror="this.style.display='none'"></div>
               <div class="cap"><b>Brain Tumor Detection</b><small>Deep Learning · VGG16</small></div>
             </div>
 
             <div class="card" role="button" tabindex="0" data-title="InterviewIQ – AI Voice Interviewer"
               data-meta="AI · NLP · Python · Full-stack concept"
               data-text="A proposed AI-powered interview platform concept designed to conduct voice-based interviews, capture spoken responses and support hiring workflows. Planned components include speech recognition, text-to-speech, an AI agent, a backend API and a web interface.">
-              <div class="ph"><img src="{% static 'images/project-interviewiq.jpg' %}"
-                  alt="InterviewIQ AI interviewer concept" loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="ph"><img src="{% static 'images/interview_iq.jpg' %}" alt="InterviewIQ AI interviewer concept"
+                  loading="lazy" onerror="this.style.display='none'"></div>
               <div class="cap"><b>InterviewIQ</b><small>AI Voice Interviewer</small></div>
             </div>
 
             <div class="card" role="button" tabindex="0" data-title="Machine Learning Search Engine"
               data-meta="Python · Information Retrieval · ML"
               data-text="A search-engine project idea exploring how machine learning techniques can improve document retrieval and the relevance of search results. Add your implementation details, dataset and evaluation results here.">
-              <div class="ph"><img src="{% static 'images/project-search-engine.jpg' %}"
-                  alt="Machine learning search engine" loading="lazy" onerror="this.style.display='none'"></div>
+              <div class="ph"><img src="{% static 'images/search_engine.jpg' %}" alt="Machine learning search engine"
+                  loading="lazy" onerror="this.style.display='none'"></div>
               <div class="cap"><b>ML Search Engine</b><small>Python · Search</small></div>
             </div>
 
-            <div class="card" role="button" tabindex="0" data-title="Django Personal Portfolio"
-              data-meta="Django · Python · HTML · CSS · JavaScript"
-              data-text="This portfolio website is being customized with Django templates, static assets and a cinematic animated interface to present professional information, skills and projects.">
-              <div class="ph"><img src="{% static 'images/project-portfolio.jpg' %}" alt="Django portfolio website"
-                  loading="lazy" onerror="this.style.display='none'"></div>
-              <div class="cap"><b>Django Portfolio</b><small>Web Development</small></div>
-            </div>
+
 
             <div class="card" role="button" tabindex="0" data-title="Python Coding Practice"
               data-meta="Python · DSA · Problem Solving"
